@@ -5,7 +5,22 @@ from opendbc.car.nissan.values import CAR
 Ecu = CarParams.Ecu
 
 FW_VERSIONS = {
-  CAR.NISSAN_ALTIMA: {
+    CAR.NISSAN_ROGUE: {
+    (Ecu.abs, 0x740, None): [
+      b'7FL5BD\x11\x01\x00\x02e\x95e\x80\x80e#\x01\x00\x00\x00\x00\x00\x80',
+    (Ecu.eps, 0x742, None): [
+      b'9TG0A\x99A\x05\x02N123F\x1a \x00\x00\x00\x00\x00\x00\x00\x80',
+    (Ecu.combinationMeter, 0x743, None): [
+      b'7FL0A\x18B\x05\x17\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80',
+    (Ecu.engine, 0x7E0, None): [
+      b'7FH6A\x00A\x06\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80',
+    (Ecu.gateway, 0x18DAD0F1, None): [
+      b'284U27FL0A',
+    (Ecu.fwdCamera, 0x707, None): [
+      b'284N87FL0B',
+    ],
+    }
+    CAR.NISSAN_ALTIMA: {
     (Ecu.fwdCamera, 0x707, None): [
       b'284N86CA1D',
     ],
