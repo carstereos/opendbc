@@ -55,11 +55,6 @@ class NissanPlatformConfig(PlatformConfig):
 
 
 class CAR(Platforms):
-  # Rogue 2020
-  NISSAN_ROGUE = NissanPlatformConfig(
-    NissanCarDocs("Nissan Rogue 2020")],
-    NissanCarSpecs(mass=1610, wheelbase=2.705)
-  )
   NISSAN_XTRAIL = NissanPlatformConfig(
     [NissanCarDocs("Nissan X-Trail 2017")],
     NissanCarSpecs(mass=1610, wheelbase=2.705)
